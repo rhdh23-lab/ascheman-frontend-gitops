@@ -1,0 +1,15 @@
+app:
+  name: ascheman-poi-map-app
+  namespace: ascheman
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/ascheman-frontend
+  org: rhdh23-lab
+  name: ascheman-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ascheman/poi-map-app
+  tag: latest
